@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+
+    <!-- Dimension Text -->
+    <dimen name="text_dimens_16sp">16sp</dimen>
+    <dimen name="text_dimens_12sp">12sp</dimen>
+    <dimen name="elevation_shadow_2dp">2dp</dimen>
+</resources>

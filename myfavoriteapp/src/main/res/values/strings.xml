@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Favorite Movie (Final Project)</string>
+    <string name="fav_title_toolbar">Favorite</string>
+    <string name="no_data_text">Anda belum menambahkan ke favorite</string>
+    <string name="description_placeholder">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</string>
+    <string name="placeholder_title">Title Movie</string>
+</resources>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.moviecatalogue.submission.myfavoriteapp"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "MOVIE_URL", String.format("\"%s\"", "https://api.themoviedb.org/3/")
+            buildConfigField "String", "IMAGE_LOAD_URL", String.format("\"%s\"", "https://image.tmdb.org/t/p/w185")
+            buildConfigField "String", "API_KEY", String.format("\"%s\"", "9baedfb896da855a4b9c55f09c735f76")
+        }
+        release {
+            buildConfigField "String", "MOVIE_URL", String.format("\"%s\"", "https://api.themoviedb.org/3/")
+            buildConfigField "String", "IMAGE_LOAD_URL", String.format("\"%s\"", "https://image.tmdb.org/t/p/w185")
+            buildConfigField "String", "API_KEY", String.format("\"%s\"", "9baedfb896da855a4b9c55f09c735f76")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled false
+        }
+    }
+
+}
+
+ext {
+    supportLibraryVersion = '28.0.0'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "com.android.support.test:runner:$runnerVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
+
+    // Support ibrary
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$supportLibraryVersion"
+
+    // Dependecy Injenction view Library
+    implementation "com.jakewharton:butterknife:$butterknifeLibraryVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeLibraryVersion"
+    implementation "com.google.code.gson:gson:$gsonLibraryVersion"
+
+    // Image Loader
+    implementation "de.hdodenhof:circleimageview:$circlerImageVersion"
+    implementation "com.github.bumptech.glide:glide:$glideLibraryVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideLibraryVersion"
+}

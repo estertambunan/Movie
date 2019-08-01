@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kosan.ester.tugas.movie"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <!-- Read Permisison Movie Catalogue Database -->
+    <permission
+        android:name="com.kosan.ester.tugas.movie.READ_DATABASE"
+        android:protectionLevel="normal" />
+
+    <permission
+        android:name="com.kosan.ester.tugas.movie.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.activity.DetailMoviesActivity"
+            android:parentActivityName=".view.activity.MainActivity"/>
+
+        <activity android:name=".view.activity.SettingActivity"
+            android:parentActivityName=".view.activity.MainActivity"/>
+
+        <!-- Content Provider-->
+        <provider
+            android:name=".database.provider.MovieProvider"
+            android:authorities="com.kosan.ester.tugas.movie"
+            android:exported="true"
+            android:readPermission="com.kosan.ester.tugas.movie.READ_DATABASE"
+            android:writePermission="com.kosan.ester.tugas.movie.WRITE_DATABASE" />
+
+        <!-- Widget Service -->
+        <receiver android:name=".view.widget.FavoriteMovieWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favorite_widget_info" />
+        </receiver>
+
+        <!-- Stack Widget Service -->
+        <service
+            android:name=".service.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+
+        <!-- Release Today Service -->
+        <receiver
+            android:name=".service.ReleaseTodayService"
+            android:enabled="true"
+            android:exported="false">
+        </receiver>
+
+        <!-- Daily Reminder Service -->
+        <receiver
+            android:name=".service.DailyReminderService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

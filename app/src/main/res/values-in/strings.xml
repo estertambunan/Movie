@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Movie Catalogue</string>
+
+    <!-- Title -->
+    <string name="movie_title_hint">Judul Film</string>
+    <string name="title_bar_search_movie">Cari Film</string>
+    <string name="title_bar_now_playing">Sedang Tayang</string>
+    <string name="title_bar_up_comming">Akan Datang</string>
+    <string name="title_bar_favorite">Favorit</string>
+    <string name="title_bar_setting">Pengaturan</string>
+    <string name="title_bar_setting_laguage">Pilih Bahasa</string>
+    <string name="search">Cari</string>
+    <string name="overview">Overview</string>
+    <string name="release">Release</string>
+    <string name="genres">Genres</string>
+    <string name="rating">Rating</string>
+    <string name="language">language</string>
+    <string name="duration">duration</string>
+
+    <!--placeholder-->
+    <string name="language_placeholder">id</string>
+    <string name="title_placeholder">Judul</string>
+    <string name="description_placeholder">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting.</string>
+
+    <!-- Warning Message-->
+    <string name="warning_message_movie_empty_search">Masukan Movie yang anda cari!</string>
+    <string name="error_problem_text" tools:keep="@string/error_problem_text">Terjadi kesalahan server</string>
+    <string name="no_data_text">Movie tidak ditemukan</string>
+    <string name="no_favorite_text">Tidak ada daftar favorite</string>
+    <string name="add_favorite_message">Berhasil menambahkan ke favorit</string>
+    <string name="add_fail_favorite_message">Gagal Menambahkan ke favorit</string>
+    <string name="remove_favorite_message">Berhasil menghapus ke favorit</string>
+    <string name="remove_fail_favorite_message">Gagal menghapus ke favorit</string>
+    <string name="message_warning_all_movie_loaded">Semua Film Dimuat</string>
+    <string name="no_genres">tidak ada kategori</string>
+    <string name="text_no_overview">Tidak ada ulasan</string>
+
+
+    <string name="dummy_genre">Fantasy</string>
+    <string name="placeholder_value">7.0</string>
+    <string name="placeholder_date">2020–05–01</string>
+    <string name="appwidget_text" tools:keep="@string/appwidget_text">EXAMPLE</string>
+    <string name="add_widget" tools:keep="@string/add_widget">Add widget</string>
+
+    <!-- Content -->
+    <string name="daily_reminder_content">Catalogue Movie merindukanmu!</string>
+
+    <string name="notification">Notifikasi</string>
+    <string name="remember_app_content">Aplikasi selalu mengingatkan saya </string>
+    <string name="remember_app_subcontent">notifikasi tampil setiap pukul 07:00 AM, jika anda berada di halaman beranda</string>
+    <string name="remember_release_movie_content">Aplikasi selalu menampilkan film terbaru</string>
+    <string name="remember_release_movie_subcontent">notifikasi tampil setiap pukul 08:00 AM</string>
+    <string name="release_today_content">hari ini sedang tayang!</string>
+
+    <string name="daily_reminder_on_text">Berhasil mengaktifkan notifikasi mengingatkan aplikasi ini!</string>
+    <string name="daily_reminder_off_text" tools:keep="@string/daily_reminder_off_text">Berhasil menon-aktifkan notifikasi mengingkatkan aplikasi ini!</string>
+    <string name="release_movie_reminder_on_text">Berhasil mengaktifkan update terbaru movie!</string>
+    <string name="release_movie_reminder_off_text" tools:keep="@string/release_movie_reminder_off_text">Berhasil menon-aktifkan update terbaru movie!</string>
+
+</resources>

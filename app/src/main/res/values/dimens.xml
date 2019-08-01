@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin_20dp" tools:keep="@dimen/margin_20dp">20dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+
+    <!-- Dimension Text -->
+    <dimen name="text_dimens_10sp">10sp</dimen>
+    <dimen name="text_dimens_12sp">12sp</dimen>
+    <dimen name="text_dimens_14sp">14sp</dimen>
+    <dimen name="text_dimens_16sp">16sp</dimen>
+    <dimen name="text_dimens_20sp">20sp</dimen>
+    <dimen name="text_dimens_30sp">30sp</dimen>
+
+    <!-- Line Vertical -->
+    <dimen name="line_vertical_20dp">20dp</dimen>
+
+    <!-- Icon -->
+    <dimen name="icon_dimension">24dp</dimen>
+    <dimen name="nav_size_icon">25sp</dimen>
+
+    <!--Elevation -->
+    <dimen name="elevation_shadow_2dp">2dp</dimen>
+    <dimen name="elevation_shadow_16dp">16dp</dimen>
+
+    <!--Other -->
+    <dimen name="corner_rad_8dp">8dp</dimen>
+    <dimen name="row_item_size_normal">100dp</dimen>
+    <dimen name="genre_radius">200dp</dimen>
+    <dimen name="button_normal_size">35dp</dimen>
+    <dimen name="circle_dimension">100dp</dimen>
+
+    <!-- Widget Dimension -->
+    <dimen name="widget_margin" tools:keep="@dimen/widget_margin">0dp</dimen>
+    <dimen name="widget_min_width">250dp</dimen>
+    <dimen name="widget_min_height">150dp</dimen>
+
+</resources>
